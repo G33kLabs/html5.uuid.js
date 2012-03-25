@@ -1,10 +1,15 @@
 HTML5 + iOS :: UUID SUPPORT
 ===========================
 
+
 DESCRIPTION
 -----------
 
 Provides a Universal Unique Device Identifier (UUID) alternative for HTML5/iOS webApps.
+
+If iOS libs are used, uuid will be stored and will be the same on each iCloud devices.
+If only HTML5, a random uuid will be generated and stored in local storage.
+
 
 HTML5 Implementation
 -------------------
