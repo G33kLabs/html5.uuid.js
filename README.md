@@ -16,18 +16,27 @@ An example is provided into 'example.html'
 
 In your HTML :
 
-	<script type="text/javascript" src="js/libs/html5.uuid.js/html5.uuid.js"></script>
+	<script type="text/javascript" src="html5.uuid.js"></script>
 
 In your JS :
 	
 	var uuid = (new html5uuid()).get() ;
+
+or 
+
+	var uuid = new html5uuid({
+		key: 'name of the key in local storage',		// default: 'html5.uuid'
+		model: [8,4,4,4,12]								// default: [12,4,4,4,8]
+	}) ;
+	uuid.get() ;
 
 
 iOS Implementation
 ------------------
 
 For iOS, this lib generates an uuid specific for each application, stored into application settings
-=> Since iOS 5, application settings are synced with iCloud, so uuid follow the player on each device he used.
+
+Since iOS 5, application settings are synced with iCloud, so uuid follow the player on each device he used.
 
 * Drag and drop the 'ios.uuid' folder into your xCode project
 * Put that in your viewController :
