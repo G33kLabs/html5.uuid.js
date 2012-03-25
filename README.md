@@ -31,7 +31,7 @@ or
 
 	var uuid = new html5uuid({
 		key: 'name of the key in local storage',		// default: 'html5.uuid'
-		model: [8,4,4,4,12]								// default: [12,4,4,4,8]
+		model: [12,4,4,4,8]								// default: [8,4,4,4,12]
 	}) ;
 	uuid.get() ;
 

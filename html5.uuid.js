@@ -9,15 +9,12 @@
 	var UUID = function(opts) {
 		opts = opts || {} ;
 		this.uuid = null ;
-		this.model = opts.model || [12,4,4,4,8] ; 	// Generate an uuid like this :: 9F7791D8CE85-AAFE-4988-93B1-A7B6E99D 
+		this.model = opts.model || [8,4,4,4,12] ; 	// Generate an uuid like this :: A7B6E99D-AAFE-4988-93B1-9F7791D8CE85
 		this.key = opts.key || 'html5.uuid'; 		// Key name used for localStorage
 		return this;			
 	}
 
-	// -> Return in all cases a UUID
-	// => Received from device
-	// => Stored into localStorage
-	// => If no uuid detected generate one
+	// -> Return in all cases an UUID
 	UUID.prototype.get = function() {
 
 		// Setted ? ok...
