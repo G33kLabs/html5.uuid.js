@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>HTML5 UUID :: Demo</title>
+</head>
+<body>
+
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="html5.uuid.js"></script>
+	<script>
+
+		$(document).ready(function() {
+
+			// -- Look if device is reconized
+			var uuid = (new html5uuid()).get() ;
+
+			// -- Output results
+			alert('Your uuid :: '+uuid) ;
+
+		}) ;
+
+
+	</script>
+
+</body>
+</html>
