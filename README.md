@@ -31,7 +31,8 @@ For iOS, this lib generates an uuid specific for each application, stored into a
 
 * Drag and drop the 'ios.uuid' folder into your xCode project
 * Put that in your viewController :
-	
+
+<code>
 	#import "UUID.h"
 
 	- (void)webViewDidStartLoad:(UIWebView *)webView
@@ -50,4 +51,4 @@ For iOS, this lib generates an uuid specific for each application, stored into a
 	    ..
 
 	}
-
+</code>
