@@ -1,4 +1,4 @@
-// html5.uuid.js 0.1.0
+// html5.uuid.js 0.2.0
 // (c) 2012 Guillaume DE LA RUE, Seventh Side Games.
 // Html5.uuid may be freely distributed under the MIT license.
 // For all details and documentation:
@@ -70,4 +70,4 @@
 	exports.html5uuid = UUID ;
 
 // DOM or node.js scope export
-})(window||exports) ;
+})(typeof window!='undefined'?window:exports) ;
